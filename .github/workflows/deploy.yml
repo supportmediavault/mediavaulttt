@@ -27,6 +27,8 @@ jobs:
         run: npm install
       - name: Build site
         run: npm run build
+      - name: Create index redirect for i18n
+        run: echo '<meta http-equiv="refresh" content="0;url=./en/">' > ./out/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
