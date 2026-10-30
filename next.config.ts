@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/mediavault',
-  assetPrefix: '/mediavault/',
+  basePath: '/easyconvert',
+  assetPrefix: '/easyconvert/',
   images: {
     unoptimized: true,
   },
